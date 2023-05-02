@@ -5,7 +5,7 @@ const user = {
   age: 18,
   address: "beijing",
   isMarried: true,
-  wife: "bibi",
+  wife: "bibiana",
 };
 
 const user1: {
@@ -16,7 +16,7 @@ const user1: {
   wife?: string;
   //here ?: syntax is a optional syntax which shows that this might be a string or undefined (not present)
 } = {
-  name: "hasan",
+  name: "hasans",
   age: 18,
   address: "beijing",
   isMarried: true,
