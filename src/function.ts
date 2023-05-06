@@ -87,13 +87,25 @@ console.log(addNumbers);
 
 // rest operator
 
-const greetFriend = (friend1: string, friend2: string, friend3: string) => {
+const greetFriend = (
+  friend1: string,
+  friend2: string,
+  friend3: string
+): void => {
   console.log(`Hi ${friend1}, ${friend2}, ${friend3}`);
 };
 
-const friend = ["hasan", "sakib", "mushfik"];
+const friend: string[] = ["hasan", "sakib", "mushfik"];
 
-greetFriend(...friend);
+// greetFriend(...friend);
 
+// another way to do so
+
+const greetFriend2 = (...friend: string[]): void => {
+  // console.log(friend);
+  friend.forEach((element) => {
+    console.log(` hi ${element}`);
+  });
+};
+greetFriend2(...friend);
 // add a new function
-
