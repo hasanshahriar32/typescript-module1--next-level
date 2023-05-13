@@ -22,3 +22,11 @@ const user1: {
   isMarried: true,
   wife: "bibi",
 };
+
+// literal type: if you wanna use a specific type with specific value
+
+const user2: {
+  name: "hasan";
+} = {
+  name: "hasan",
+};
