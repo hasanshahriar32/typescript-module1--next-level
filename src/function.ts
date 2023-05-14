@@ -109,3 +109,14 @@ const greetFriend2 = (...friend: string[]): void => {
 };
 greetFriend2(...friend);
 // add a new function
+
+// array and object destructure
+
+const [bestFriends] = myFriends;
+console.log(bestFriends);
+
+const myBestFriend = { fullname: "bashar", age: 12 };
+console.log(myBestFriend);
+
+const { fullname } = myBestFriend;
+console.log(fullname);

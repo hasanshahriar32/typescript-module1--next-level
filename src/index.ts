@@ -4,4 +4,5 @@ console.log(course);
 // import "./basic_types";
 // import "./array&tuples";
 // import "./object";
-import "./function";
+// import "./function";
+import "./alias";
