@@ -24,11 +24,11 @@ type CourseNameType = string;
 const corseName: CourseNameType = "next level web development";
 
 // we can also declare alias for function
-
+type OperationType = (x: number, Y: number) => number;
 const calculate = (
   number1: number,
   number2: number,
-  operation: (x: number, Y: number) => number
+  operation: OperationType
 ): number => {
   return operation(number1, number2);
 };
