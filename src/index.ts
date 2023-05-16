@@ -8,4 +8,12 @@ console.log(course);
 // import "./alias";
 // import "./union-intersection";
 // import "./nullable-unknown-never";
-import "./question-mark";
+// import "./question-mark";
+function genarateAdder(a:number): (b:number)=>number{
+    return function(b:number){
+        return a+b;
+    }
+}
+const addTwo  = genarateAdder(2)
+console.log(addTwo(3));
+console.log(addTwo(5));
